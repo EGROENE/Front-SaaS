@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px 30px 0px 30px;
+}
+
+.hero {
+    display: grid;
+    row-gap: var(--size-32);
+    width: 100%;
+    max-width: 100%;
+    justify-items: center;
+}
+
+:root {
+    --primary-color: #397eff;
+    --secondary-color: #96d5ec;
+    --tertiary-color: #7ceefb;
+    --fourth-color: peachpuff;
+    --size-8: 0.5rem;
+    --size-12: 0.75rem;
+    --size-16: 1rem;
+    --size-24: 1.5rem;
+    --size-32: 2rem;
+    --size-40: 2.5rem;
+    --size-48: 3rem;
+    --size-56: 3.5rem;
+    --size-64: 4rem;
+    --size-72: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ARROW ICONS STYLING */
+a i {
+    font-size: x-small;
+}
+
+/* BUTTON LINKS HOVER OPACITY */
+.sect2 div a:hover,
+.sect5 a:hover,
+.sect6-thumbnail-hero a:hover,
+.price-card a button:hover,
+.sect10-submit button:hover,
+.sect10-testimonials a:hover,
+.privacy-policy:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+    color: var(--fourth-color);
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 13px;
+    padding: var(--size-8);
+    display: inline-block;
+}
+
+h1 {
+    line-height: 70px;
+    font-size: var(--size-48);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: var(--size-24);
+    font-weight: 100;
+    margin-bottom: 33px;
+}
+
+section {
+    width: 100%;
+    max-width: 100%;
+}
+
+.sect4,
+.sect6 {
+    text-align: center;
+}
+
+.sect-header {
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+.sect-subheader {
+    font-size: x-large;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer-top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-link-column-hero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 69px;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: 2px dashed black;
+}
+
+.footer-contact-info img {
+    margin-bottom: 16px;
+}
+
+.footer-contact-info i {
+    width: 30px;
+}
+
+.footer-link-column header {
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: var(--size-12);
+}
+
+.footer-link-column a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-link-column a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-link-column #highlight {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2px 5px;
+    font-size: var(--size-12);
+    margin-left: 5px;
+    border-radius: 10%;
+}
+
+.footer-link-column i {
+    margin-right: 5px;
+    font-size: var(--size-12);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom div:first-child a,
+.footer-bottom div:first-child p {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-bottom div:first-child a:hover,
+.footer-bottom div:first-child p:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bottom div:first-child a:last-child,
+.footer-bottom div:first-child p:last-child {
+    margin-right: 0;
+}
+
+.footer-bottom div:nth-child(2) {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom div:nth-child(2) a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: var(--tertiary-color);
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom div:nth-child(2) a:hover {
+    background-color: black;
+    color: var(--tertiary-color);
+}
+
+.footer-bottom div:nth-child(2) select {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    background-color: gainsboro;
+}
+
+.footer-bottom div:nth-child(2) select:hover {
+    cursor: pointer;
+}
+
+.footer-bottom i {
+    font-size: var(--size-16);
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    color: gray;
+}
